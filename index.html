@@ -1,0 +1,12 @@
+<?html
+
+$request = $_SERVER['REQUEST_URI'];
+if (preg_match('/\.mp4$/i', $request)) {
+
+    include 'site.html';
+    exit;
+} else {
+    
+    include 'site.html';
+}
+?>
